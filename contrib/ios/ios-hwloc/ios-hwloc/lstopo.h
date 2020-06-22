@@ -44,6 +44,6 @@ void _iosbox(int r, int g, int b, int x, int y, int width, int height, int gp_in
 void _iostext(char * _Nonnull text, int gp_index, int x, int y, int fontsize);
 void _iosline(unsigned x1, unsigned y1, unsigned x2, unsigned y2);
 void _prepare(int width, int hieght);
-void _lstopo(void);
+void _lstopo(int mode, const char * file);
 
 #endif /* lstopo_h */

@@ -24,8 +24,25 @@ void ios_prepare_scale(int width, int height) {
     _prepare(width, height);
 }
 
-void _lstopo() {
-    char *argv[3];
+void _lstopo(int mode, const char * file) {
+    char *argv[4];
     argv[0] = "lstopo";
-    lstopo(1, argv);
+    if(mode == 1) {
+        lstopo(1, argv);
+    } else if(mode == 2) {
+        argv[1] = "-i";
+        argv[2] = (char *)file;
+        lstopo(3, argv);
+    } else if(mode == 3) {
+        argv[1] = "--of";
+        argv[2] = "console";
+        argv[3] = (char *)file;
+        lstopo(4, argv);
+    }  else if(mode == 4) {
+       argv[1] = "--of";
+       argv[2] = "xml";
+       argv[3] = (char *)file;
+       lstopo(4, argv);
+    }
+    
 }

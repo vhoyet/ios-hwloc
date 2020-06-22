@@ -1307,10 +1307,13 @@ lstopo (int argc, char *argv[])
     free(restrictstring);
   }
     
-  output_format = LSTOPO_OUTPUT_IOS;
+    output_func = output_ios_draw;
 
-  output_func = output_ios_draw;
-
+    if(output_format == LSTOPO_OUTPUT_CONSOLE)
+      output_func = output_console;
+    if(output_format == LSTOPO_OUTPUT_XML)
+      output_func = output_xml;
+          
   loutput.topology = topology;
   loutput.depth = hwloc_topology_get_depth(topology);
   loutput.file = NULL;

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7474BEC249257B30072155D /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7474BEB249257B30072155D /* LineView.swift */; };
 		A7474BEE24939B970072155D /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7474BED24939B970072155D /* DropDownButton.swift */; };
 		A7474BF224939FF30072155D /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7474BF124939FF30072155D /* DropDownView.swift */; };
 		A7474BF4249A4CD20072155D /* cInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7474BF3249A4CD20072155D /* cInterface.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A7474BEB249257B30072155D /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		A7474BED24939B970072155D /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
 		A7474BF124939FF30072155D /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		A7474BF3249A4CD20072155D /* cInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cInterface.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				A76612F92490F8A5005A8A98 /* lstopo.h */,
 				A76612FA2490F8A5005A8A98 /* lstopo.c */,
 				A76612F82490F8A5005A8A98 /* ios-hwloc-Bridging-Header.h */,
-				A7474BEB249257B30072155D /* LineView.swift */,
 				A7474BED24939B970072155D /* DropDownButton.swift */,
 				A7474BF124939FF30072155D /* DropDownView.swift */,
 				A7474BF3249A4CD20072155D /* cInterface.swift */,
@@ -219,7 +216,6 @@
 				A76612DD2490F78F005A8A98 /* AppDelegate.swift in Sources */,
 				A7474BF224939FF30072155D /* DropDownView.swift in Sources */,
 				A76612FB2490F8A5005A8A98 /* lstopo.c in Sources */,
-				A7474BEC249257B30072155D /* LineView.swift in Sources */,
 				A76612DF2490F78F005A8A98 /* SceneDelegate.swift in Sources */,
 				A7474BF4249A4CD20072155D /* cInterface.swift in Sources */,
 			);

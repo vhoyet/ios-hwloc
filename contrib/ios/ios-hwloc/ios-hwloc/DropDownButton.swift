@@ -20,7 +20,6 @@ class DropDownButton: UIButton {
         self.backgroundColor = UIColor.lightGray
         
         dropView = DropDownView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0))
-        //dropView.delegate = self
         dropView.translatesAutoresizingMaskIntoConstraints = false
     }
     
