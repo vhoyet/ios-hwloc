@@ -17,6 +17,10 @@
 		A76612E62490F791005A8A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76612E52490F791005A8A98 /* Assets.xcassets */; };
 		A76612E92490F791005A8A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76612E72490F791005A8A98 /* LaunchScreen.storyboard */; };
 		A76612FB2490F8A5005A8A98 /* lstopo.c in Sources */ = {isa = PBXBuildFile; fileRef = A76612FA2490F8A5005A8A98 /* lstopo.c */; };
+		A7835DDA24A23C1C00E3A7E6 /* ImportMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7835DD924A23C1C00E3A7E6 /* ImportMenu.swift */; };
+		A7835DDC24A370A200E3A7E6 /* SelectVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7835DDB24A370A200E3A7E6 /* SelectVIew.swift */; };
+		A7850A7824A4C2EA00DA3076 /* TopologyTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7850A7724A4C2EA00DA3076 /* TopologyTags.swift */; };
+		A7F17EC624AA1EBE003705A6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F17EC524AA1EBE003705A6 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,11 @@
 		A76612FA2490F8A5005A8A98 /* lstopo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lstopo.c; sourceTree = "<group>"; };
 		A76612FD24910574005A8A98 /* libcurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurses.tbd; path = usr/lib/libcurses.tbd; sourceTree = SDKROOT; };
 		A7661300249105F8005A8A98 /* libncurses.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.tbd; path = usr/lib/libncurses.tbd; sourceTree = SDKROOT; };
+		A7835DD924A23C1C00E3A7E6 /* ImportMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportMenu.swift; sourceTree = "<group>"; };
+		A7835DDB24A370A200E3A7E6 /* SelectVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVIew.swift; sourceTree = "<group>"; };
+		A7850A7724A4C2EA00DA3076 /* TopologyTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyTags.swift; sourceTree = "<group>"; };
+		A7F17EC424AA1728003705A6 /* ios-hwlocRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-hwlocRelease.entitlements"; sourceTree = "<group>"; };
+		A7F17EC524AA1EBE003705A6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F17EC624AA1EBE003705A6 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +82,7 @@
 		A76612DB2490F78F005A8A98 /* ios-hwloc */ = {
 			isa = PBXGroup;
 			children = (
+				A7F17EC424AA1728003705A6 /* ios-hwlocRelease.entitlements */,
 				A76612DC2490F78F005A8A98 /* AppDelegate.swift */,
 				A76612DE2490F78F005A8A98 /* SceneDelegate.swift */,
 				A76612E02490F78F005A8A98 /* ViewController.swift */,
@@ -85,6 +96,9 @@
 				A7474BED24939B970072155D /* DropDownButton.swift */,
 				A7474BF124939FF30072155D /* DropDownView.swift */,
 				A7474BF3249A4CD20072155D /* cInterface.swift */,
+				A7835DD924A23C1C00E3A7E6 /* ImportMenu.swift */,
+				A7835DDB24A370A200E3A7E6 /* SelectVIew.swift */,
+				A7850A7724A4C2EA00DA3076 /* TopologyTags.swift */,
 			);
 			path = "ios-hwloc";
 			sourceTree = "<group>";
@@ -133,6 +147,7 @@
 		A76612FC24910574005A8A98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7F17EC524AA1EBE003705A6 /* CloudKit.framework */,
 				A7661300249105F8005A8A98 /* libncurses.tbd */,
 				A76612FD24910574005A8A98 /* libcurses.tbd */,
 			);
@@ -214,10 +229,13 @@
 				A7474BEE24939B970072155D /* DropDownButton.swift in Sources */,
 				A76612E12490F78F005A8A98 /* ViewController.swift in Sources */,
 				A76612DD2490F78F005A8A98 /* AppDelegate.swift in Sources */,
+				A7835DDA24A23C1C00E3A7E6 /* ImportMenu.swift in Sources */,
 				A7474BF224939FF30072155D /* DropDownView.swift in Sources */,
 				A76612FB2490F8A5005A8A98 /* lstopo.c in Sources */,
 				A76612DF2490F78F005A8A98 /* SceneDelegate.swift in Sources */,
+				A7835DDC24A370A200E3A7E6 /* SelectVIew.swift in Sources */,
 				A7474BF4249A4CD20072155D /* cInterface.swift in Sources */,
+				A7850A7824A4C2EA00DA3076 /* TopologyTags.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +405,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "ios-hwloc/ios-hwlocRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y33GV4XWFF;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/include",
 					"$(SRCROOT)/../../../include",

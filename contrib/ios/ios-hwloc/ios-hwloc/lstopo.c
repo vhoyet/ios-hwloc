@@ -43,6 +43,10 @@ void _lstopo(int mode, const char * file) {
        argv[2] = "xml";
        argv[3] = (char *)file;
        lstopo(4, argv);
+    } else if(mode == 5) {
+       argv[1] = "-i";
+       argv[2] = (char *)file;
+       lstopo(3, argv);
     }
     
 }

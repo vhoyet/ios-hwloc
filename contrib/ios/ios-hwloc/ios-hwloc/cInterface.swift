@@ -57,8 +57,10 @@ public func _prepare(width: UnsafeMutableRawPointer?, height: UnsafeMutableRawPo
     let hwloc_screen_height = Int(bitPattern: height)
     
     let screenSize = UIScreen.main.bounds
-    width_scale =  Float(screenSize.width) / Float(hwloc_screen_width)
-    height_scale = Float(Int(screenSize.height) - navBarHeight) / Float(hwloc_screen_height)
+    /* width_scale =  Float(screenSize.width) / Float(hwloc_screen_width)
+    height_scale = Float(Int(screenSize.height) - navBarHeight) / Float(hwloc_screen_height) */
+    width_scale =  2
+    height_scale = 2
     
     if(width_scale > 0.5) {
         fontSize = 11
